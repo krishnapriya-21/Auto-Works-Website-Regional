@@ -1,0 +1,22 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&family=Tiro+Tamil&display=swap');
+
+
+/* Font Variable */
+:root {
+--font-heading:'tiro-tamil', sans-serif;
+--font-body:'noto-sans-tamil',sans-serif;
+--font-local:'inter',sans-serif;
+}
+/* Font Usage */
+h1,h2,h3{
+    font-family : var(--font-heading);
+}
+
+h4{
+    font-family: var(--font-local);
+}
+
+body,p,span,li{
+    font-family: var(--font-body);
+}
