@@ -1,0 +1,220 @@
+@import url('./Assets/CSS/fonts.css');
+@import url('./Assets/CSS/colors.css');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    padding-top: 15%; /* Adjust for Fixed Header */
+    color: var(--font-color);
+    width:100%;
+    height:100%;
+}
+
+header,footer{
+   background-image: linear-gradient(90deg, var(--website-color-Tamil-Green),var(--website-color-Tamil-Yellow),var(--website-color-Tamil-Blue));
+    max-height:30vh;
+}
+
+footer{
+    margin-top: 10%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.container{
+    display:flex;
+    gap:2rem;
+    padding: 0rem 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1600px;
+    max-height:fit-content;
+    margin: 0 2rem;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    width:180px;
+    height: auto;
+   
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap:5rem;
+    margin: 0;
+    padding: 20px;
+}
+.nav-links a{
+    text-decoration:none;
+    color: var(--font-color);
+    font-weight: bold;
+}
+.nav-links a:hover{
+    text-decoration:underline;
+}
+
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+    gap:3rem;
+    margin:0 auto;
+    max-height: 80vh;
+        
+}
+
+.hero-text{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.hero-image img{
+    height: 500px;
+    object-fit: cover;
+    border-radius:8px;
+}
+
+.Features,.Services,.Contact{
+    max-height: 80vh;
+    padding: 0rem 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1600px;
+    max-height:fit-content;
+    margin: 5rem 2rem;
+    
+}
+
+
+.Features-grid-1R{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: center;
+    justify-items: center;
+   
+}
+.Features-grid-2R{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 7rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card{
+   padding:2rem 2rem;
+   background-image: linear-gradient(90deg, color-mix(in srgb, var(--website-color-Tamil-Green) 50%, transparent),color-mix(in srgb,var(--website-color-Tamil-Yellow)50%,transparent),color-mix(in srgb,var(--website-color-Tamil-Blue)50%,transparent));
+   border-radius:20px;
+}
+
+.Services{
+    background-image: linear-gradient(90deg, color-mix(in srgb ,var(--website-color-Tamil-Green)75%, transparent ),color-mix(in srgb,var(--website-color-Tamil-Yellow)75%,transparent),color-mix(in srgb,var(--website-color-Tamil-Blue)75%,transparent));
+    padding: 0rem 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1600px;
+    max-height:fit-content;
+    margin: 0rem 2rem;
+    align-items:center;
+}
+
+.Services h2{
+    padding-top: 2rem;
+}
+
+.Services img{
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+   
+}
+
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.slider-track{
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    min-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+
+}
+
+.slider-card{
+    background-color: white;
+    padding: 2rem;
+    justify-items: center;
+    text-align: center;
+
+        
+}
+
+.slider-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    background: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 1;
+    
+}
+
+.slider-button.prev{
+    left: 0;
+}
+
+.slider-button.next{
+    right: 0;
+}
+
+#Footer-Info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    padding-top: 2rem;
+   
+}
