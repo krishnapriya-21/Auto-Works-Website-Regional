@@ -4,9 +4,9 @@
 
 /* Font Variable */
 :root {
---font-heading:'tiro-tamil', sans-serif;
---font-body:'noto-sans-tamil',sans-serif;
---font-local:'inter',sans-serif;
+--font-heading:'Tiro-Tamil', serif;
+--font-body:'Noto Sans Tamil',serif;
+--font-local:'Inter',sans-serif;
 }
 /* Font Usage */
 h1,h2,h3{
