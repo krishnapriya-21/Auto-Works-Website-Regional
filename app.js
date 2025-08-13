@@ -10,7 +10,7 @@ const prevButton=document.querySelector('.slider-button.prev');
 const nextButton=document.querySelector('.slider-button.next');
 
 let currentIndex=0;
-
+let autoSlideInterval
 
 // Function to move the next or previous slide
 function updateSlider(){
