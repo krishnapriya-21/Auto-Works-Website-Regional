@@ -1,6 +1,11 @@
 @import url('./Assets/CSS/fonts.css');
 @import url('./Assets/CSS/colors.css');
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin:0;
     padding:0;
@@ -11,16 +16,15 @@ body{
     color: var(--font-color);
     width:100%;
     height:100%;
+    line-height: 1.6;
 }
 
-header,footer{
+header{
    background-image: linear-gradient(90deg, var(--website-color-Tamil-Green),var(--website-color-Tamil-Yellow),var(--website-color-Tamil-Blue));
-    max-height:30vh;
+   max-height:30vh;
 }
 
-footer{
-    margin-top: 10%;
-}
+
 
 header{
     position: fixed;
@@ -30,6 +34,9 @@ header{
     z-index: 1000;
 }
 
+section{
+    scroll-margin-top: 160px; /* Adjust for Fixed Header*/
+}
 
 .container{
     display:flex;
@@ -93,13 +100,10 @@ header{
 
 .Features,.Services,.Contact{
     max-height: 80vh;
-    padding: 0rem 1rem;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 32px 32px;
     max-width: 1600px;
     max-height:fit-content;
-    margin: 5rem 2rem;
+    margin: 0px 32px;
     
 }
 
@@ -134,17 +138,15 @@ header{
 
 .Services{
     background-image: linear-gradient(90deg, color-mix(in srgb ,var(--website-color-Tamil-Green)75%, transparent ),color-mix(in srgb,var(--website-color-Tamil-Yellow)75%,transparent),color-mix(in srgb,var(--website-color-Tamil-Blue)75%,transparent));
-    padding: 0rem 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 32px 32px;
     max-width: 1600px;
     max-height:fit-content;
-    margin: 0rem 2rem;
+    margin: 0px 32px;
     align-items:center;
 }
 
 .Services h2{
-    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .Services img{
@@ -161,6 +163,7 @@ header{
     width: 100%;
     max-width: 1200px;
     margin: auto;
+   
 }
 
 
@@ -210,11 +213,76 @@ header{
     right: 0;
 }
 
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+.contact-container{
+    max-width: 650px;
+    margin-top: 25px;
+    background-image: linear-gradient(90deg,color-mix(in srgb, var(--website-color-Tamil-Green)50%,transparent),color-mix(in srgb,var(--website-color-Tamil-Yellow)50%,transparent),color-mix(in srgb,var(--website-color-Tamil-Blue)50%,transparent));
+
+}
+
+.contact-details-grid{
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr;
+}
+
+.contact-icons,.contact-info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact-icons img{
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    
+}
+
+#contact-heading{
+    font-size: large;
+    margin-top: 2rem;
+}
+
+.contact-container p{
+    text-align:justify;
+    padding: 20px 20px;
+    gap: 1rem;
+    
+}
+
+
+.location-map-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 650%;
+   
+    margin-top: 25px;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.footer-line{
+    
+    background-image: linear-gradient(90deg, var(--website-color-Tamil-Green),var(--website-color-Tamil-Yellow),var(--website-color-Tamil-Blue));
+    max-height:1vh;
+
+}
+
 #Footer-Info{
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-items: center;
     padding-top: 2rem;
+    font-size: 12px;
    
 }
