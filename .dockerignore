@@ -1,0 +1,39 @@
+# Node or build artifacts
+node_modules/
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+# Git and Version Control
+.git/
+.gitignore
+
+#Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Environment and configuration
+.env
+*.bak
+
+# Design tools and raw assets
+*.psd
+*.xcf
+*.ai
+*.sketch
+
+# IDE/ Editor settings
+.vscode/
+.idea/
+
+# Docker and container files
+Dockerfile
+.dockerignore
+
+# Miscellaneous
+*.zip
